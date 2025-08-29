@@ -13,7 +13,8 @@ function getUser() {
     return __awaiter(this, void 0, void 0, function* () {
         let res = yield fetch("http://localhost:3000/items");
         let data = yield res.json();
-        console.log(data);
+        characters = data;
+        console.log(characters[0]);
     });
 }
 getUser();
