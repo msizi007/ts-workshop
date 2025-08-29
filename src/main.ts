@@ -8,3 +8,9 @@ async function getUser(): Promise<void> {
   console.log(characters[0]);
 }
 getUser();
+
+let root = document.getElementById("root") as HTMLElement;
+function noCharacterData(rootElement: HTMLElement, msg: string): void {
+  rootElement!.innerHTML = msg;
+}
+noCharacterData(root, "No data to display");
